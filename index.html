@@ -6,40 +6,40 @@
 <title>AI 资讯精选 · 2026年06月24日</title>
 <style>
   :root{
-    --bg:#f6f7f9; --card:#fff; --ink:#1c2330; --sub:#7a8290; --line:#e8ebef;
-    --link:#2f6df6; --why:#eef9f1; --why-ink:#1f7a44; --feat:#fff7e6; --feat-ink:#d48806;
+    --bg:#fff; --ink:#1c2330; --sub:#8a909c; --line:#ececf0;
+    --link:#2f6df6; --why:#f1f8f3; --why-ink:#1f7a44; --feat-ink:#c98a14;
     --t-工具:#0ea5a4; --t-技巧:#7c3aed; --t-行业:#d97706; --t-产品:#2563eb; --t-模型:#db2777;
   }
   @media(prefers-color-scheme:dark){
-    :root{--bg:#0e1116;--card:#161b24;--ink:#e7eaef;--sub:#9aa3b2;--line:#232a36;
-          --link:#6ea0ff;--why:#15241b;--why-ink:#5fd08a;--feat:#2a2113;--feat-ink:#e0a93a;}
+    :root{--bg:#0f1216;--ink:#e7eaef;--sub:#8b94a3;--line:#232a36;
+          --link:#6ea0ff;--why:#13201a;--why-ink:#5fd08a;--feat-ink:#e0a93a;}
   }
   *{box-sizing:border-box;margin:0;padding:0}
   body{background:var(--bg);color:var(--ink);
-    font:16px/1.8 -apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;
+    font:16px/1.85 -apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;
     -webkit-font-smoothing:antialiased;}
-  .wrap{max-width:720px;margin:0 auto;padding:30px 20px 70px;}
-  header{padding:4px 2px 18px;border-bottom:2px solid var(--ink);margin-bottom:20px;}
+  .wrap{max-width:720px;margin:0 auto;padding:34px 22px 80px;}
+  header{padding-bottom:18px;margin-bottom:6px;}
   h1{font-size:26px;letter-spacing:-.3px;}
-  .meta{color:var(--sub);font-size:14px;margin-top:7px;}
+  .meta{color:var(--sub);font-size:14px;margin-top:8px;}
 
-  .item{background:var(--card);border:1px solid var(--line);border-radius:14px;
-    padding:18px 20px;margin-bottom:14px;}
-  .cardtop{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px;}
+  /* 扁平：每条无卡片框，仅用细分割线分隔 */
+  .item{padding:26px 0;border-top:1px solid var(--line);}
+  .cardtop{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:9px;}
   .src{font-size:13px;color:var(--sub);}
-  .feat{font-size:12.5px;padding:2px 10px;border-radius:999px;background:var(--feat);
-    color:var(--feat-ink);white-space:nowrap;font-weight:600;}
-  .title{font-size:18.5px;font-weight:660;line-height:1.5;}
+  .feat{font-size:12.5px;color:var(--feat-ink);white-space:nowrap;font-weight:600;}
+  .title{font-size:20px;font-weight:680;line-height:1.5;}
   .title a{color:var(--link);text-decoration:none;}
   .title a:hover{text-decoration:underline;}
-  .rk{color:var(--sub);}
-  .chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 8px;}
-  .chip{font-size:12px;padding:2px 10px;border-radius:999px;color:#fff;}
-  .summary{margin-top:5px;color:var(--ink);line-height:1.85;}
-  .why{margin-top:12px;padding:11px 14px;background:var(--why);border-radius:9px;
-    font-size:14.5px;line-height:1.8;}
+  .rk{color:var(--sub);font-weight:700;}
+  .chips{display:flex;flex-wrap:wrap;gap:7px;margin:11px 0 12px;}
+  .chip{font-size:12px;padding:2px 11px;border-radius:999px;color:#fff;}
+  .summary{margin-top:6px;color:var(--ink);line-height:1.95;}
+  .why{margin-top:14px;padding:12px 16px;background:var(--why);border-radius:10px;
+    font-size:14.5px;line-height:1.85;}
   .why b{color:var(--why-ink);}
-  footer{margin-top:34px;text-align:center;color:var(--sub);font-size:12.5px;line-height:1.85;}
+  footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);
+    text-align:center;color:var(--sub);font-size:12.5px;line-height:1.85;}
 </style>
 </head>
 <body>
@@ -196,7 +196,7 @@
 
   <footer>
     本简报由脚本自动抓取 · 聚类去重 · 排序 · AI 摘要生成<br>
-    抓取/排序 0 成本 · 摘要由 sonnet 生成 · 2026-06-24 00:11
+    抓取/排序 0 成本 · 摘要由 sonnet 生成 · 2026-06-24 00:39
   </footer>
 </div>
 </body>
