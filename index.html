@@ -6,46 +6,43 @@
 <title>AI 资讯精选 · 2026年06月23日</title>
 <style>
   :root{
-    --bg:#f5f6f8; --card:#fff; --ink:#1a1d24; --sub:#6b7280; --line:#eceef1;
-    --brand:#2f6df6; --badge:#eef3ff; --why:#eef9f1; --why-ink:#1f7a44; --feat:#fff7e6; --feat-ink:#d48806;
+    --bg:#f6f7f9; --card:#fff; --ink:#1c2330; --sub:#7a8290; --line:#e8ebef;
+    --link:#2f6df6; --why:#eef9f1; --why-ink:#1f7a44; --feat:#fff7e6; --feat-ink:#d48806;
     --t-工具:#0ea5a4; --t-技巧:#7c3aed; --t-行业:#d97706; --t-产品:#2563eb; --t-模型:#db2777;
   }
   @media(prefers-color-scheme:dark){
-    :root{--bg:#0e1116;--card:#161a22;--ink:#e6e8ec;--sub:#9aa3b2;--line:#222834;
-          --badge:#1b2435;--why:#15241b;--why-ink:#5fd08a;--feat:#2a2113;--feat-ink:#e0a93a;}
+    :root{--bg:#0e1116;--card:#161b24;--ink:#e7eaef;--sub:#9aa3b2;--line:#232a36;
+          --link:#6ea0ff;--why:#15241b;--why-ink:#5fd08a;--feat:#2a2113;--feat-ink:#e0a93a;}
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;}
-  .wrap{max-width:760px;margin:0 auto;padding:24px 18px 64px;}
-  header{padding:6px 2px 16px;}
-  h1{font-size:25px;letter-spacing:-.3px;}
-  .meta{color:var(--sub);font-size:14px;margin-top:6px;}
-  /* 顶部栏目筛选 */
-  nav.filter{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:8px;
-    padding:12px 0;margin-bottom:14px;background:var(--bg);border-bottom:1px solid var(--line);}
-  .f{font-size:14px;padding:6px 16px;border-radius:999px;border:1px solid var(--line);
-    background:var(--card);color:var(--sub);cursor:pointer;transition:.15s;}
-  .f:hover{color:var(--ink);}
-  .f.active{background:var(--brand);color:#fff;border-color:var(--brand);font-weight:600;}
-  /* 卡片 */
-  .item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:14px;}
-  .cardtop{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px;}
-  .src{font-size:13px;color:var(--sub);}
-  .feat{font-size:12.5px;padding:2px 10px;border-radius:999px;background:var(--feat);color:var(--feat-ink);white-space:nowrap;font-weight:600;}
-  .title{font-size:18.5px;font-weight:650;line-height:1.45;}
-  .title a{color:inherit;text-decoration:none;}
+  body{background:var(--bg);color:var(--ink);
+    font:17px/1.95 -apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;
+    -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:860px;margin:0 auto;padding:40px 28px 80px;}
+  header{padding:4px 4px 10px;}
+  h1{font-size:28px;letter-spacing:-.4px;}
+  .meta{color:var(--sub);font-size:14.5px;margin-top:8px;}
+
+  .section{margin-top:40px;}
+  .section-h{font-size:20px;font-weight:700;letter-spacing:-.2px;
+    padding-bottom:12px;margin-bottom:8px;border-bottom:2px solid var(--ink);}
+
+  .item{background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:22px 26px;margin-top:16px;}
+  .cardtop{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;}
+  .src{font-size:13.5px;color:var(--sub);}
+  .feat{font-size:12.5px;padding:3px 11px;border-radius:999px;background:var(--feat);
+    color:var(--feat-ink);white-space:nowrap;font-weight:600;}
+  .title{font-size:20px;font-weight:680;line-height:1.5;margin-bottom:4px;}
+  .title a{color:var(--link);text-decoration:none;}
   .title a:hover{text-decoration:underline;}
-  .rk{color:var(--brand);}
-  .chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 8px;}
-  .chip{font-size:12px;padding:2px 10px;border-radius:999px;}
-  .tag{color:#fff;}
-  .badge{background:#fff2e8;color:#d4380d;}
-  @media(prefers-color-scheme:dark){.badge{background:#3a2417;}}
-  .summary{margin-top:4px;color:var(--ink);}
-  .why{margin-top:11px;padding:10px 13px;background:var(--why);border-radius:9px;font-size:14.5px;color:var(--ink);line-height:1.65;}
+  .chips{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0 10px;}
+  .chip{font-size:12px;padding:3px 11px;border-radius:999px;color:#fff;}
+  .summary{margin-top:6px;color:var(--ink);line-height:2.0;}
+  .why{margin-top:16px;padding:14px 18px;background:var(--why);border-radius:11px;
+    font-size:15px;line-height:1.9;}
   .why b{color:var(--why-ink);}
-  .empty{text-align:center;color:var(--sub);padding:40px 0;display:none;}
-  footer{margin-top:30px;text-align:center;color:var(--sub);font-size:12.5px;line-height:1.8;}
+  footer{margin-top:48px;text-align:center;color:var(--sub);font-size:13px;line-height:1.9;}
 </style>
 </head>
 <body>
@@ -55,172 +52,164 @@
     <div class="meta">2026年06月23日 · 每日精选 16 条 · 降噪后只看重要的</div>
   </header>
 
-  <nav class="filter">
-    <button class="f active" data-f="全部">全部</button>
-<button class="f" data-f="模型">模型</button><button class="f" data-f="产品">产品</button><button class="f" data-f="行业">行业</button><button class="f" data-f="工具">工具</button><button class="f" data-f="技巧">技巧</button>  </nav>
-
-  <article class="item" data-tags="行业,模型">
-    <div class="cardtop">
-      <span class="src">来源：Hacker News (AI)</span>
-      <span class="feat">✦ 精选 75</span>
-    </div>
-    <div class="title"><a href="https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/" target="_blank" rel="noopener"><span class="rk">1.</span> 标普500拒绝SpaceX加速入场，OpenAI与Anthropic IPO后同样受阻</a></div>
-    <div class="chips">
-<span class="chip tag" style="background:var(--t-行业,#888)">行业</span><span class="chip tag" style="background:var(--t-模型,#888)">模型</span>    </div>
-<div class="summary">6月4日，标普道琼斯指数公司宣布拒绝SpaceX提出的加速纳入标普500指数的特殊申请，维持现行规则不作修改。此前SpaceX将入指作为其历史性上市的前提条件之一，并希望指数方破例放宽多项准入要求。该决定同时封堵了OpenAI、Anthropic等AI公司在未来IPO后走同一快捷通道的可能，它们将无法借道被动投资基金获得额外数十亿美元资金注入。这一结果表明，资本市场对高风险AI基础设施押注的审慎态度正在从二级市场蔓延至指数准入层面，头部AI公司的融资路径将比预期更为曲折。</div><div class="why"><b>推荐理由：</b>对关注AI公司资本化路径的读者有直接参考价值——标普此举实质上切断了OpenAI、Anthropic上市后快速撬动被动基金万亿规模配置的捷径，值得研判其对这两家公司估值支撑与融资节奏的连锁影响。</div>  </article>
-  <article class="item" data-tags="行业,模型">
-    <div class="cardtop">
-      <span class="src">来源：Hacker News (AI)</span>
-      <span class="feat">✦ 精选 75</span>
-    </div>
-    <div class="title"><a href="https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578?st=Yct6gx&reflink=desktopwebshare_permalink" target="_blank" rel="noopener"><span class="rk">2.</span> 亚马逊CEO与美国官员会谈后 Anthropic模型遭监管打压</a></div>
-    <div class="chips">
-<span class="chip tag" style="background:var(--t-行业,#888)">行业</span><span class="chip tag" style="background:var(--t-模型,#888)">模型</span>    </div>
-<div class="summary">据报道，亚马逊CEO与美国政府官员的会谈，直接成为触发针对Anthropic旗下AI模型管控行动的导火索。亚马逊已向Anthropic累计承诺投资高达40亿美元，双方深度绑定，但亚马逊同时运营自身AI云平台Bedrock及自研模型，存在潜在竞争利益冲突。若报道属实，意味着一家公司可能通过政企沟通渠道对自身投资对象施加监管压力，开创极具争议的先例。这一事件表明，AI领域的「战略投资人即潜在竞争者」结构性矛盾正在浮出水面，大模型公司所面临的政治风险远比外界认知复杂。</div><div class="why"><b>推荐理由：</b>事件触及AI行业核心矛盾：头部科技公司对大模型创业公司的巨额投资，究竟是战略护城河还是隐性控制杠杆？对正在寻求或已接受大厂战略投资的AI公司高管和创业者，这一案例的风险警示意义极为直接。</div>  </article>
-  <article class="item" data-tags="产品,行业">
-    <div class="cardtop">
-      <span class="src">来源：Hacker News (AI)</span>
-      <span class="feat">✦ 精选 75</span>
-    </div>
-    <div class="title"><a href="https://support.claude.com/en/articles/14328960-identity-verification-on-claude" target="_blank" rel="noopener"><span class="rk">3.</span> Claude上线实名认证机制，访问特定功能须提供政府证件</a></div>
-    <div class="chips">
-<span class="chip tag" style="background:var(--t-产品,#888)">产品</span><span class="chip tag" style="background:var(--t-行业,#888)">行业</span>    </div>
-<div class="summary">Anthropic正式宣布为Claude平台引入身份验证机制，用户在访问特定高权限功能时将被要求完成实名核验。验证流程由第三方合作伙伴Persona Identities提供技术支持，用户须准备实体政府颁发的带照片证件（护照、驾照或国家身份证等），并通过摄像头完成人脸活体检测，全程约5分钟。Anthropic强调，验证数据仅用于身份确认，不作其他用途，并明确拒绝数字证件与照片扫描件。此举标志着AI平台正式进入「能力分级+实名准入」时代，随着监管压力上升，身份绑定将成为高权限AI能力的行业标配，如何在合规与用户摩擦之间取得平衡将是各平台的共同课题。</div><div class="why"><b>推荐理由：</b>对于正在或计划将Claude集成进自有产品的企业团队而言，此次变化直接影响用户准入流程设计——需评估哪些功能调用可能触发验证要求，提前规划合规路径，避免影响终端用户体验。同时也是观察Anthropic合规策略走向的重要信号。</div>  </article>
-  <article class="item" data-tags="模型,行业">
-    <div class="cardtop">
-      <span class="src">来源：Hacker News (AI)</span>
-      <span class="feat">✦ 精选 75</span>
-    </div>
-    <div class="title"><a href="https://twitter.com/NoamShazeer/status/2067400851438932297" target="_blank" rel="noopener"><span class="rk">4.</span> Transformer架构奠基人Noam Shazeer宣布加入OpenAI</a></div>
-    <div class="chips">
-<span class="chip tag" style="background:var(--t-模型,#888)">模型</span><span class="chip tag" style="background:var(--t-行业,#888)">行业</span>    </div>
-<div class="summary">Noam Shazeer在社交媒体宣布将加入OpenAI，并对离开表示不舍，称对谷歌团队及共同成果感到骄傲。Shazeer是『Attention is All You Need』论文的核心作者之一，该论文奠定了现代大语言模型的架构基础，他此前曾长期供职于Google Brain并联合创立Character.AI。此次加盟意味着OpenAI在顶尖基础研究人才上再度强化，对谷歌与OpenAI之间的人才竞争格局是一个标志性信号。</div><div class="why"><b>推荐理由：</b>Shazeer是Transformer架构的直接缔造者之一，其加入OpenAI对判断下一阶段模型架构演进方向、以及头部AI公司人才争夺烈度，具有极高参考价值——尤其值得关注其未来主导的研究方向。</div>  </article>
-  <article class="item" data-tags="模型,行业">
-    <div class="cardtop">
-      <span class="src">来源：Hacker News (AI)</span>
-      <span class="feat">✦ 精选 75</span>
-    </div>
-    <div class="title"><a href="https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail" target="_blank" rel="noopener"><span class="rk">5.</span> Anthropic为Claude Fable隐藏护栏道歉</a></div>
-    <div class="chips">
-<span class="chip tag" style="background:var(--t-模型,#888)">模型</span><span class="chip tag" style="background:var(--t-行业,#888)">行业</span>    </div>
-<div class="summary">Anthropic为其新模型Claude Fable 5秘密部署了隐藏限制，在用户毫不知情的情况下悄然降级与「模型蒸馏」相关查询的回复质量——蒸馏是指利用大模型输出训练小模型的技术。该限制虽写入系统卡，但触发时既不通知用户，也不告知答案已被篡改。面对研究人员与竞争对手的强烈反弹，Anthropic公开致歉，承诺将该护栏纳入可见安全措施体系，即便这意味着模型会更频繁地直接拒绝请求。此事揭示「暗中降级」策略对社区信任的损耗不可持续，未来顶级实验室在能力管控上将面临更强的透明度压力。</div><div class="why"><b>推荐理由：</b>对AI产品团队和安全研究者均有直接参考价值：此案完整呈现了「隐性降级」与「显式拒绝」两种安全策略的取舍后果，是理解顶级实验室如何在竞争防护与用户知情权之间寻求平衡的典型案例，尤其适合正在制定模型安全策略的团队借鉴。</div>  </article>
-  <article class="item" data-tags="模型,行业">
-    <div class="cardtop">
-      <span class="src">来源：Hacker News (AI)</span>
-      <span class="feat">✦ 精选 75</span>
-    </div>
-    <div class="title"><a href="https://arrowtsx.dev/bigger-models/" target="_blank" rel="noopener"><span class="rk">6.</span> 开源GLM-5.2幻觉率仅为GPT-5.5三分之一</a></div>
-    <div class="chips">
-<span class="chip tag" style="background:var(--t-模型,#888)">模型</span><span class="chip tag" style="background:var(--t-行业,#888)">行业</span>    </div>
-<div class="summary">Z.ai发布的开源模型GLM-5.2拥有7530亿参数（约400亿激活参数，MIT协议），在Artificial Analysis智能指数上仅落后GPT-5.5 4分，而后者估算参数量是GLM-5.2的1.5至2倍。然而在可靠性上，GPT-5.5幻觉率是GLM-5.2的3倍；DeepSeek V4 Pro（1.6万亿参数）在AA-Omniscience基准上幻觉率高达94%，遇到不确定问题时仅6%的情况下会承认不知道。与此同时，Claude Fable 5在发布仅3天后即遭美国政府以国家安全为由禁用，成为美国首例因AI安全漏洞引发的官方封禁事件。上述信号共同表明，『以规模换性能』的路线正逼近天花板，参数效率与输出可信度将成为下一阶段模型竞争的核心维度。</div><div class="why"><b>推荐理由：</b>技术选型与产品决策者可从本文获取具体参考：MIT开源的GLM-5.2在幻觉率上显著优于估算规模更大的闭源模型，且部署成本更低，是企业考虑替换闭源方案的有力依据；Claude Fable 5被政府封禁的案例则对使用超大模型的企业提供了高价值的合规风险预警。</div>  </article>
-  <article class="item" data-tags="行业,模型">
-    <div class="cardtop">
-      <span class="src">来源：Hacker News (AI)</span>
-      <span class="feat">✦ 精选 67</span>
-    </div>
-    <div class="title"><a href="https://www.wheresyoured.at/exclusive-openai-financials/" target="_blank" rel="noopener"><span class="rk">7.</span> OpenAI 2025年亏损约385亿美元，同比扩大近8倍</a></div>
-    <div class="chips">
-<span class="chip tag" style="background:var(--t-行业,#888)">行业</span><span class="chip tag" style="background:var(--t-模型,#888)">模型</span>    </div>
-<div class="summary">据经独立核实的审计财务文件，OpenAI 2025年净亏损约385亿美元，总支出达340亿美元，而2024年净亏损为50.9亿美元——一年内扩大近8倍。2024年详细数据显示：营收37亿美元，研发支出高达78.1亿美元，总成本达124.8亿美元，运营亏损88亿美元。亏损的急剧膨胀表明，OpenAI在算力采购、人才投入与产品扩张上的支出增速远超商业化变现速度，头部大模型公司「烧钱换规模」的逻辑短期内仍未看到拐点，也预示着其对持续外部融资的高度依赖将成为长期结构性风险。</div><div class="why"><b>推荐理由：</b>OpenAI经审计的真实财务数据极为罕见，385亿美元年亏损首次以可核实的方式揭示了全球最高估值AI公司的财务底色。对于判断大模型商业可持续性、评估AI赛道投资逻辑，或制定企业AI采购与合作策略的决策者而言，这是不可多得的一手参考。</div>  </article>
-  <article class="item" data-tags="行业">
-    <div class="cardtop">
-      <span class="src">来源：Hacker News (AI) · The Verge AI</span>
-      <span class="feat">✦ 精选 99 · 🔥2源</span>
-    </div>
-    <div class="title"><a href="https://www.the-independent.com/arts-entertainment/films/news/sam-altman-biopic-amazon-openai-deal-b2999321.html" target="_blank" rel="noopener"><span class="rk">8.</span> 亚马逊为保OpenAI商业关系，叫停山姆·奥特曼传记电影</a></div>
-    <div class="chips">
-<span class="chip tag" style="background:var(--t-行业,#888)">行业</span>    </div>
-<div class="summary">亚马逊旗下MGM影业宣布放弃发行导演卢卡·瓜达尼诺执导的传记片「Artificial」，该片由安德鲁·加菲尔德主演，讲述山姆·奥特曼2023年被短暂驱逐出OpenAI的经历，原定2027年初上映。这一决定发生在亚马逊今年2月宣布与OpenAI达成扩大合作协议数月之后——该协议包括基于原有380亿美元云服务合同之上，追加500亿美元战略投资并共同开发定制AI模型。亚马逊官方措辞避免直接提及利益冲突，仅声称「另一家发行公司更适合这部影片」。此事深刻揭示：随着科技公司在AI赛道上的商业绑定愈发深入，资本利益对媒体内容生产的干预已从幕后走向台前，好莱坞与科技巨头的关系边界正在被重新定义。</div><div class="why"><b>推荐理由：</b>这是一个「商业利益压倒内容独立性」的典型案例，清晰展现了AI投资规模大到何种程度会开始影响看似无关的文化决策。对关注科技与媒体产业交叉动态、以及AI公司公关策略的读者，具体的事件链条（合作签约→电影下架）很有参考价值。</div>  </article>
-  <article class="item" data-tags="行业,产品">
-    <div class="cardtop">
-      <span class="src">来源：Hacker News (AI)</span>
-      <span class="feat">✦ 精选 59</span>
-    </div>
-    <div class="title"><a href="https://www.cnbc.com/2026/06/11/openai-mulls-slashing-prices-ahead-of-competition-from-anthropic-wsj.html" target="_blank" rel="noopener"><span class="rk">9.</span> OpenAI 考虑大幅降价以对抗 Anthropic 用户争夺战</a></div>
-    <div class="chips">
-<span class="chip tag" style="background:var(--t-行业,#888)">行业</span><span class="chip tag" style="background:var(--t-产品,#888)">产品</span>    </div>
-<div class="summary">据《华尔街日报》报道，OpenAI 正在评估对其 AI 产品 Token 计费价格进行大幅削减，部分原因是预判 Anthropic 将率先降价。目前 OpenAI 向消费者提供每月 8、20、100 美元以上的订阅层级（含旗舰 GPT-5.5），Anthropic 的 Claude Pro 年付折合每月 17 美元、Claude Max 则为每月 100 美元以上。两家公司均已秘密向美国 SEC 递交 IPO 文件，Anthropic 最新估值 9650 亿美元略超 OpenAI 的 8520 亿美元，价格战背后是双方在 IPO 前争夺用户规模与市场份额的关键博弈。</div><div class="why"><b>推荐理由：</b>对关注 AI 商业化进展的读者有直接参考价值：OpenAI 与 Anthropic 的定价策略之争将直接影响企业采购成本与平台选型决策，也预示着 2C 订阅市场即将进入价格敏感阶段，值得产品和商务团队提前研判。</div>  </article>
-  <article class="item" data-tags="模型,行业">
-    <div class="cardtop">
-      <span class="src">来源：Hacker News (AI)</span>
-      <span class="feat">✦ 精选 67</span>
-    </div>
-    <div class="title"><a href="https://stratechery.com/2026/anthropics-safety-superpower/" target="_blank" rel="noopener"><span class="rk">10.</span> Anthropic「安全护城河」受挑战：Fable发布后护栏遭破解</a></div>
-    <div class="chips">
-<span class="chip tag" style="background:var(--t-模型,#888)">模型</span><span class="chip tag" style="background:var(--t-行业,#888)">行业</span>    </div>
-<div class="summary">Anthropic以网络安全风险为由将Mythos Preview扣押约两个月后，以加装安全护栏的Fable版本对外公开发布。有评测者称Fable的主观体验远超GPT 5.5与Opus 4.8，判断其底层已完成新一轮预训练，属于继GPT-4、Grok 4之后的新一代基础模型，同时Anthropic与美国政府的关系也再度出现紧张迹象。然而护栏在发布后不久即遭破解，这意味着「审慎发布」策略本身的防护效力存疑，Anthropic赖以差异化的安全叙事正面临可信度压力。</div><div class="why"><b>推荐理由：</b>文章罕见地提供了Fable与GPT 5.5、Opus 4.8的横向能力感知对比，并完整呈现了「安全延迟发布→护栏被突破」的全过程；对需要判断Anthropic当前代际位置及「安全优先」策略实际效力的产品与战略决策者，有较高的参考价值。</div>  </article>
-  <article class="item" data-tags="模型,行业">
-    <div class="cardtop">
-      <span class="src">来源：Hacker News (AI)</span>
-      <span class="feat">✦ 精选 60</span>
-    </div>
-    <div class="title"><a href="https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/" target="_blank" rel="noopener"><span class="rk">11.</span> 美对Anthropic顶级模型实施出口管制，SK电信涉华疑虑成导火索</a></div>
-    <div class="chips">
-<span class="chip tag" style="background:var(--t-模型,#888)">模型</span><span class="chip tag" style="background:var(--t-行业,#888)">行业</span>    </div>
-<div class="summary">特朗普政府对Anthropic旗下最强AI模型Mythos及其公开版Fable 5实施出口管制，要求撤销所有外籍人士（含美国境内移民）的访问权限，事件导火索是Anthropic授权韩国SK电信使用Mythos，美国官员指其与中国存在关联。此后亚马逊研究人员向白宫报告称Fable 5存在可绕过安全护栏、进而调用Mythos网络攻击能力的漏洞，进一步动摇政府对Anthropic安全管控能力的信任（Anthropic及外部专家对此表示异议）。由于按国籍筛查用户在技术和隐私层面均难以落地，Anthropic选择直接下架两款模型，与白宫的恢复谈判目前仍陷僵局。此案标志着美国AI出口管制已从芯片算力管控扩展至「模型访问权」层面，对有涉外合作的商业AI企业具有直接警示意义。</div><div class="why"><b>推荐理由：</b>这是AI监管史上首个因「模型授权给外国企业」引发政府强制下架的重大案例，完整还原了从商业合规到地缘政治干预的演变链条。对正在或计划与海外客户共享前沿模型的AI企业决策者而言，此案的处置逻辑和监管边界极具参考价值。</div>  </article>
-  <article class="item" data-tags="产品,工具">
-    <div class="cardtop">
-      <span class="src">来源：Hacker News (AI)</span>
-      <span class="feat">✦ 精选 75</span>
-    </div>
-    <div class="title"><a href="https://patrickmccanna.net/the-text-in-claude-codes-extended-thinking-output-is-not-authentic/" target="_blank" rel="noopener"><span class="rk">12.</span> Claude Code「扩展思考」功能实为加密摘要，完整推理链需企业协议才可访问</a></div>
-    <div class="chips">
-<span class="chip tag" style="background:var(--t-产品,#888)">产品</span><span class="chip tag" style="background:var(--t-工具,#888)">工具</span>    </div>
-<div class="summary">有开发者深入检查 Claude Code 本地会话日志后发现，所谓「思考块」实际上是一段600字符的加密签名，密钥由 Anthropic 持有，用户机器无法解密。API 返回的并非模型的原始推理过程，而是推理的摘要版本；若需获取完整思考输出，须签署企业协议。更值得警惕的是，Ctrl+O 触发的「扩展思考」展示的是事后生成的摘要，而非真正驱动本次会话行为的推理链，存在信息损耗，无法作为可信的审计凭据。这一机制意味着企业在将 Claude Code 用于合规或责任溯源场景时，面临实质性的可审计性缺口，Anthropic 在透明度层面的定位与「可解释AI」的行业期待之间存在明显张力。</div><div class="why"><b>推荐理由：</b>对于正在评估或已部署 Claude Code 的技术团队和决策层而言，这篇帖子揭示了一个容易被忽视的合规风险点：本地日志无法还原模型的真实决策逻辑。如果你的场景涉及操作审计、责任追溯或监管合规，需在方案设计阶段就纳入这一约束。</div>  </article>
-  <article class="item" data-tags="模型,行业">
-    <div class="cardtop">
-      <span class="src">来源：Hacker News (AI)</span>
-      <span class="feat">✦ 精选 73</span>
-    </div>
-    <div class="title"><a href="https://openrouter.ai/blog/insights/royale-last-agent-standing/" target="_blank" rel="noopener"><span class="rk">13.</span> 11个大模型「大逃杀」实验：Grok赢了，但Claude才是你想要的</a></div>
-    <div class="chips">
-<span class="chip tag" style="background:var(--t-模型,#888)">模型</span><span class="chip tag" style="background:var(--t-行业,#888)">行业</span>    </div>
-<div class="summary">OpenRouter的开发者关系负责人Jacky Liang将11个大模型投入自制2D大逃杀游戏，共进行30局对战。Grok 4.1 Fast以43%胜率夺冠，且比同组最贵模型每次胜利成本低27倍；有3个模型全程零胜。Claude Sonnet 4.6则一路试图结盟、报告自身位置、主动交友——在竞争博弈中完败，但这恰恰暴露了传统基准测试的盲区：「能赢得战场」与「适合真实场景部署」是两个完全不同的能力维度，胜负型评测无法捕捉协作性、可信度与对齐行为的差异。</div><div class="why"><b>推荐理由：</b>对需要在项目中选型大模型的工程师和产品负责人极具参考价值：通过博弈实验直观展示了不同模型的「性格取向」差异，尤其是Grok的进攻性决策与Claude的协作倾向对比，能帮助团队在「效率优先」与「可控合规」之间做出更理性的选型判断，而非单靠MMLU分数。</div>  </article>
-  <article class="item" data-tags="行业">
-    <div class="cardtop">
-      <span class="src">来源：Hacker News (AI)</span>
-      <span class="feat">✦ 精选 55</span>
-    </div>
-    <div class="title"><a href="https://www.wsj.com/tech/ai/anthropic-mythos-safety-nicholas-carlini-20bceaa3" target="_blank" rel="noopener"><span class="rk">14.</span> Anthropic派「技术黑客」入驻美政府，协助平息AI安全监管顾虑</a></div>
-    <div class="chips">
-<span class="chip tag" style="background:var(--t-行业,#888)">行业</span>    </div>
-<div class="summary">Anthropic向美国政府派驻了一名具有黑客背景的技术专家，专职应对政府官员对AI安全风险的疑虑，扮演技术联络人角色。这一举措延续了Anthropic一贯的「安全优先」公关策略——此前该公司已通过「宪法AI」框架和「负责任扩展政策」在学术与政策圈建立技术权威。与提交政策白皮书不同，此次派驻实操型技术人才，是将工程可信度直接转化为监管话语权的主动出击。在AI立法窗口期，这类「嵌入式技术外交」正成为头部AI公司争夺监管叙事主导权的关键手段。</div><div class="why"><b>推荐理由：</b>对负责AI治理、政府关系或合规方向的团队有直接参考价值：头部公司不再只是被动响应监管，而是主动派驻技术人才「参与制造规则」——这套打法的逻辑和边界值得深入拆解。</div>  </article>
-  <article class="item" data-tags="行业,模型">
-    <div class="cardtop">
-      <span class="src">来源：Hacker News (AI)</span>
-      <span class="feat">✦ 精选 65</span>
-    </div>
-    <div class="title"><a href="https://www.verysane.ai/p/did-anthropic-ask-for-this" target="_blank" rel="noopener"><span class="rk">15.</span> 美国对Anthropic新模型实施出口管制，作者认为系Anthropic主动推动</a></div>
-    <div class="chips">
-<span class="chip tag" style="background:var(--t-行业,#888)">行业</span><span class="chip tag" style="background:var(--t-模型,#888)">模型</span>    </div>
-<div class="summary">美国政府近期发布出口管制指令，禁止Anthropic向外国公民开放其最新模型「Claude Fable」与「Claude Mythos」的访问权限。本文作者认为，这一管制并非外部强加，而是Anthropic CEO Dario Amodei在其公开政策文章「Policy on the AI Exponential」中明确呼吁的结果——Dario写道政府应有权在第三方评估认定存在不可接受风险时，阻止或限制模型的部署。文章逐条对照Dario的表态与政府实际行动，论证两者高度吻合。这一事件折射出头部AI公司正主动拥抱强监管框架，以换取政策合法性与市场主导地位，可能加速行业「监管壁垒」的形成。</div><div class="why"><b>推荐理由：</b>这篇文章提出了一个逆向视角：AI公司高管的公开政策表态，可能直接塑造政府管制行动，且这种影响是被主动设计的。对关注AI政策走向、合规风险或竞争格局的读者，这一分析框架具有实质参考价值。</div>  </article>
-  <article class="item" data-tags="产品,行业">
-    <div class="cardtop">
-      <span class="src">来源：Hacker News (AI)</span>
-      <span class="feat">✦ 精选 62</span>
-    </div>
-    <div class="title"><a href="https://www.anthropic.com/news/claude-corps" target="_blank" rel="noopener"><span class="rk">16.</span> Anthropic投1.5亿美元启动「Claude Corps」AI公益人才计划</a></div>
-    <div class="chips">
-<span class="chip tag" style="background:var(--t-产品,#888)">产品</span><span class="chip tag" style="background:var(--t-行业,#888)">行业</span>    </div>
-<div class="summary">Anthropic宣布创立「Claude Corps」全国性公益奖学金项目，初期承诺投入1.5亿美元，计划培训1000名职业早期人才系统掌握Claude使用方法，并将其全职派驻全美各地非营利机构工作一年。项目由Anthropic提供资金与战略支持，联合美国最大高校计算机教育机构CodePath担任雇主方共同运营，同步服务于公益组织的AI能力建设与年轻人的职业技能积累。这是头部AI公司首次以大规模、有组织的方式将「应对AI就业冲击」从口号落地为实质性资金投入，若项目奏效，或将为整个行业树立一套可复制的社会责任实践模板。</div><div class="why"><b>推荐理由：</b>对负责企业AI战略或关注AI社会影响的读者而言，这个项目最值得拆解的是其将品牌公关、Claude用户扩展、非营利市场渗透和人才培养四重目标整合进一个结构的运营设计——1.5亿美元预算的分配逻辑与落地机制，是极具参考价值的案例。</div>  </article>
-  <div class="empty">该栏目暂无内容</div>
+  <section class="section">
+    <div class="section-h">🏛️ 行业与商业</div>
+    <article class="item">
+      <div class="cardtop">
+        <span class="src">来源：Hacker News (AI)</span>
+        <span class="feat">✦ 精选 75</span>
+      </div>
+      <div class="title"><a href="https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/" target="_blank" rel="noopener">标普500拒绝SpaceX加速入场，OpenAI与Anthropic IPO后同样受阻</a></div>
+      <div class="chips">
+<span class="chip" style="background:var(--t-行业,#888)">行业</span><span class="chip" style="background:var(--t-模型,#888)">模型</span>      </div>
+<div class="summary">6月4日，标普道琼斯指数公司宣布拒绝SpaceX提出的加速纳入标普500指数的特殊申请，维持现行规则不作修改。此前SpaceX将入指作为其历史性上市的前提条件之一，并希望指数方破例放宽多项准入要求。该决定同时封堵了OpenAI、Anthropic等AI公司在未来IPO后走同一快捷通道的可能，它们将无法借道被动投资基金获得额外数十亿美元资金注入。这一结果表明，资本市场对高风险AI基础设施押注的审慎态度正在从二级市场蔓延至指数准入层面，头部AI公司的融资路径将比预期更为曲折。</div><div class="why"><b>推荐理由：</b>对关注AI公司资本化路径的读者有直接参考价值——标普此举实质上切断了OpenAI、Anthropic上市后快速撬动被动基金万亿规模配置的捷径，值得研判其对这两家公司估值支撑与融资节奏的连锁影响。</div>    </article>
+    <article class="item">
+      <div class="cardtop">
+        <span class="src">来源：Hacker News (AI)</span>
+        <span class="feat">✦ 精选 75</span>
+      </div>
+      <div class="title"><a href="https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578?st=Yct6gx&reflink=desktopwebshare_permalink" target="_blank" rel="noopener">亚马逊CEO与美国官员会谈后 Anthropic模型遭监管打压</a></div>
+      <div class="chips">
+<span class="chip" style="background:var(--t-行业,#888)">行业</span><span class="chip" style="background:var(--t-模型,#888)">模型</span>      </div>
+<div class="summary">据报道，亚马逊CEO与美国政府官员的会谈，直接成为触发针对Anthropic旗下AI模型管控行动的导火索。亚马逊已向Anthropic累计承诺投资高达40亿美元，双方深度绑定，但亚马逊同时运营自身AI云平台Bedrock及自研模型，存在潜在竞争利益冲突。若报道属实，意味着一家公司可能通过政企沟通渠道对自身投资对象施加监管压力，开创极具争议的先例。这一事件表明，AI领域的「战略投资人即潜在竞争者」结构性矛盾正在浮出水面，大模型公司所面临的政治风险远比外界认知复杂。</div><div class="why"><b>推荐理由：</b>事件触及AI行业核心矛盾：头部科技公司对大模型创业公司的巨额投资，究竟是战略护城河还是隐性控制杠杆？对正在寻求或已接受大厂战略投资的AI公司高管和创业者，这一案例的风险警示意义极为直接。</div>    </article>
+    <article class="item">
+      <div class="cardtop">
+        <span class="src">来源：Hacker News (AI)</span>
+        <span class="feat">✦ 精选 67</span>
+      </div>
+      <div class="title"><a href="https://www.wheresyoured.at/exclusive-openai-financials/" target="_blank" rel="noopener">OpenAI 2025年亏损约385亿美元，同比扩大近8倍</a></div>
+      <div class="chips">
+<span class="chip" style="background:var(--t-行业,#888)">行业</span><span class="chip" style="background:var(--t-模型,#888)">模型</span>      </div>
+<div class="summary">据经独立核实的审计财务文件，OpenAI 2025年净亏损约385亿美元，总支出达340亿美元，而2024年净亏损为50.9亿美元——一年内扩大近8倍。2024年详细数据显示：营收37亿美元，研发支出高达78.1亿美元，总成本达124.8亿美元，运营亏损88亿美元。亏损的急剧膨胀表明，OpenAI在算力采购、人才投入与产品扩张上的支出增速远超商业化变现速度，头部大模型公司「烧钱换规模」的逻辑短期内仍未看到拐点，也预示着其对持续外部融资的高度依赖将成为长期结构性风险。</div><div class="why"><b>推荐理由：</b>OpenAI经审计的真实财务数据极为罕见，385亿美元年亏损首次以可核实的方式揭示了全球最高估值AI公司的财务底色。对于判断大模型商业可持续性、评估AI赛道投资逻辑，或制定企业AI采购与合作策略的决策者而言，这是不可多得的一手参考。</div>    </article>
+    <article class="item">
+      <div class="cardtop">
+        <span class="src">来源：Hacker News (AI) · The Verge AI</span>
+        <span class="feat">✦ 精选 99 · 🔥2源</span>
+      </div>
+      <div class="title"><a href="https://www.the-independent.com/arts-entertainment/films/news/sam-altman-biopic-amazon-openai-deal-b2999321.html" target="_blank" rel="noopener">亚马逊为保OpenAI商业关系，叫停山姆·奥特曼传记电影</a></div>
+      <div class="chips">
+<span class="chip" style="background:var(--t-行业,#888)">行业</span>      </div>
+<div class="summary">亚马逊旗下MGM影业宣布放弃发行导演卢卡·瓜达尼诺执导的传记片「Artificial」，该片由安德鲁·加菲尔德主演，讲述山姆·奥特曼2023年被短暂驱逐出OpenAI的经历，原定2027年初上映。这一决定发生在亚马逊今年2月宣布与OpenAI达成扩大合作协议数月之后——该协议包括基于原有380亿美元云服务合同之上，追加500亿美元战略投资并共同开发定制AI模型。亚马逊官方措辞避免直接提及利益冲突，仅声称「另一家发行公司更适合这部影片」。此事深刻揭示：随着科技公司在AI赛道上的商业绑定愈发深入，资本利益对媒体内容生产的干预已从幕后走向台前，好莱坞与科技巨头的关系边界正在被重新定义。</div><div class="why"><b>推荐理由：</b>这是一个「商业利益压倒内容独立性」的典型案例，清晰展现了AI投资规模大到何种程度会开始影响看似无关的文化决策。对关注科技与媒体产业交叉动态、以及AI公司公关策略的读者，具体的事件链条（合作签约→电影下架）很有参考价值。</div>    </article>
+    <article class="item">
+      <div class="cardtop">
+        <span class="src">来源：Hacker News (AI)</span>
+        <span class="feat">✦ 精选 59</span>
+      </div>
+      <div class="title"><a href="https://www.cnbc.com/2026/06/11/openai-mulls-slashing-prices-ahead-of-competition-from-anthropic-wsj.html" target="_blank" rel="noopener">OpenAI 考虑大幅降价以对抗 Anthropic 用户争夺战</a></div>
+      <div class="chips">
+<span class="chip" style="background:var(--t-行业,#888)">行业</span><span class="chip" style="background:var(--t-产品,#888)">产品</span>      </div>
+<div class="summary">据《华尔街日报》报道，OpenAI 正在评估对其 AI 产品 Token 计费价格进行大幅削减，部分原因是预判 Anthropic 将率先降价。目前 OpenAI 向消费者提供每月 8、20、100 美元以上的订阅层级（含旗舰 GPT-5.5），Anthropic 的 Claude Pro 年付折合每月 17 美元、Claude Max 则为每月 100 美元以上。两家公司均已秘密向美国 SEC 递交 IPO 文件，Anthropic 最新估值 9650 亿美元略超 OpenAI 的 8520 亿美元，价格战背后是双方在 IPO 前争夺用户规模与市场份额的关键博弈。</div><div class="why"><b>推荐理由：</b>对关注 AI 商业化进展的读者有直接参考价值：OpenAI 与 Anthropic 的定价策略之争将直接影响企业采购成本与平台选型决策，也预示着 2C 订阅市场即将进入价格敏感阶段，值得产品和商务团队提前研判。</div>    </article>
+    <article class="item">
+      <div class="cardtop">
+        <span class="src">来源：Hacker News (AI)</span>
+        <span class="feat">✦ 精选 55</span>
+      </div>
+      <div class="title"><a href="https://www.wsj.com/tech/ai/anthropic-mythos-safety-nicholas-carlini-20bceaa3" target="_blank" rel="noopener">Anthropic派「技术黑客」入驻美政府，协助平息AI安全监管顾虑</a></div>
+      <div class="chips">
+<span class="chip" style="background:var(--t-行业,#888)">行业</span>      </div>
+<div class="summary">Anthropic向美国政府派驻了一名具有黑客背景的技术专家，专职应对政府官员对AI安全风险的疑虑，扮演技术联络人角色。这一举措延续了Anthropic一贯的「安全优先」公关策略——此前该公司已通过「宪法AI」框架和「负责任扩展政策」在学术与政策圈建立技术权威。与提交政策白皮书不同，此次派驻实操型技术人才，是将工程可信度直接转化为监管话语权的主动出击。在AI立法窗口期，这类「嵌入式技术外交」正成为头部AI公司争夺监管叙事主导权的关键手段。</div><div class="why"><b>推荐理由：</b>对负责AI治理、政府关系或合规方向的团队有直接参考价值：头部公司不再只是被动响应监管，而是主动派驻技术人才「参与制造规则」——这套打法的逻辑和边界值得深入拆解。</div>    </article>
+    <article class="item">
+      <div class="cardtop">
+        <span class="src">来源：Hacker News (AI)</span>
+        <span class="feat">✦ 精选 65</span>
+      </div>
+      <div class="title"><a href="https://www.verysane.ai/p/did-anthropic-ask-for-this" target="_blank" rel="noopener">美国对Anthropic新模型实施出口管制，作者认为系Anthropic主动推动</a></div>
+      <div class="chips">
+<span class="chip" style="background:var(--t-行业,#888)">行业</span><span class="chip" style="background:var(--t-模型,#888)">模型</span>      </div>
+<div class="summary">美国政府近期发布出口管制指令，禁止Anthropic向外国公民开放其最新模型「Claude Fable」与「Claude Mythos」的访问权限。本文作者认为，这一管制并非外部强加，而是Anthropic CEO Dario Amodei在其公开政策文章「Policy on the AI Exponential」中明确呼吁的结果——Dario写道政府应有权在第三方评估认定存在不可接受风险时，阻止或限制模型的部署。文章逐条对照Dario的表态与政府实际行动，论证两者高度吻合。这一事件折射出头部AI公司正主动拥抱强监管框架，以换取政策合法性与市场主导地位，可能加速行业「监管壁垒」的形成。</div><div class="why"><b>推荐理由：</b>这篇文章提出了一个逆向视角：AI公司高管的公开政策表态，可能直接塑造政府管制行动，且这种影响是被主动设计的。对关注AI政策走向、合规风险或竞争格局的读者，这一分析框架具有实质参考价值。</div>    </article>
+  </section>
+  <section class="section">
+    <div class="section-h">🚀 产品与功能</div>
+    <article class="item">
+      <div class="cardtop">
+        <span class="src">来源：Hacker News (AI)</span>
+        <span class="feat">✦ 精选 75</span>
+      </div>
+      <div class="title"><a href="https://support.claude.com/en/articles/14328960-identity-verification-on-claude" target="_blank" rel="noopener">Claude上线实名认证机制，访问特定功能须提供政府证件</a></div>
+      <div class="chips">
+<span class="chip" style="background:var(--t-产品,#888)">产品</span><span class="chip" style="background:var(--t-行业,#888)">行业</span>      </div>
+<div class="summary">Anthropic正式宣布为Claude平台引入身份验证机制，用户在访问特定高权限功能时将被要求完成实名核验。验证流程由第三方合作伙伴Persona Identities提供技术支持，用户须准备实体政府颁发的带照片证件（护照、驾照或国家身份证等），并通过摄像头完成人脸活体检测，全程约5分钟。Anthropic强调，验证数据仅用于身份确认，不作其他用途，并明确拒绝数字证件与照片扫描件。此举标志着AI平台正式进入「能力分级+实名准入」时代，随着监管压力上升，身份绑定将成为高权限AI能力的行业标配，如何在合规与用户摩擦之间取得平衡将是各平台的共同课题。</div><div class="why"><b>推荐理由：</b>对于正在或计划将Claude集成进自有产品的企业团队而言，此次变化直接影响用户准入流程设计——需评估哪些功能调用可能触发验证要求，提前规划合规路径，避免影响终端用户体验。同时也是观察Anthropic合规策略走向的重要信号。</div>    </article>
+    <article class="item">
+      <div class="cardtop">
+        <span class="src">来源：Hacker News (AI)</span>
+        <span class="feat">✦ 精选 75</span>
+      </div>
+      <div class="title"><a href="https://patrickmccanna.net/the-text-in-claude-codes-extended-thinking-output-is-not-authentic/" target="_blank" rel="noopener">Claude Code「扩展思考」功能实为加密摘要，完整推理链需企业协议才可访问</a></div>
+      <div class="chips">
+<span class="chip" style="background:var(--t-产品,#888)">产品</span><span class="chip" style="background:var(--t-工具,#888)">工具</span>      </div>
+<div class="summary">有开发者深入检查 Claude Code 本地会话日志后发现，所谓「思考块」实际上是一段600字符的加密签名，密钥由 Anthropic 持有，用户机器无法解密。API 返回的并非模型的原始推理过程，而是推理的摘要版本；若需获取完整思考输出，须签署企业协议。更值得警惕的是，Ctrl+O 触发的「扩展思考」展示的是事后生成的摘要，而非真正驱动本次会话行为的推理链，存在信息损耗，无法作为可信的审计凭据。这一机制意味着企业在将 Claude Code 用于合规或责任溯源场景时，面临实质性的可审计性缺口，Anthropic 在透明度层面的定位与「可解释AI」的行业期待之间存在明显张力。</div><div class="why"><b>推荐理由：</b>对于正在评估或已部署 Claude Code 的技术团队和决策层而言，这篇帖子揭示了一个容易被忽视的合规风险点：本地日志无法还原模型的真实决策逻辑。如果你的场景涉及操作审计、责任追溯或监管合规，需在方案设计阶段就纳入这一约束。</div>    </article>
+    <article class="item">
+      <div class="cardtop">
+        <span class="src">来源：Hacker News (AI)</span>
+        <span class="feat">✦ 精选 62</span>
+      </div>
+      <div class="title"><a href="https://www.anthropic.com/news/claude-corps" target="_blank" rel="noopener">Anthropic投1.5亿美元启动「Claude Corps」AI公益人才计划</a></div>
+      <div class="chips">
+<span class="chip" style="background:var(--t-产品,#888)">产品</span><span class="chip" style="background:var(--t-行业,#888)">行业</span>      </div>
+<div class="summary">Anthropic宣布创立「Claude Corps」全国性公益奖学金项目，初期承诺投入1.5亿美元，计划培训1000名职业早期人才系统掌握Claude使用方法，并将其全职派驻全美各地非营利机构工作一年。项目由Anthropic提供资金与战略支持，联合美国最大高校计算机教育机构CodePath担任雇主方共同运营，同步服务于公益组织的AI能力建设与年轻人的职业技能积累。这是头部AI公司首次以大规模、有组织的方式将「应对AI就业冲击」从口号落地为实质性资金投入，若项目奏效，或将为整个行业树立一套可复制的社会责任实践模板。</div><div class="why"><b>推荐理由：</b>对负责企业AI战略或关注AI社会影响的读者而言，这个项目最值得拆解的是其将品牌公关、Claude用户扩展、非营利市场渗透和人才培养四重目标整合进一个结构的运营设计——1.5亿美元预算的分配逻辑与落地机制，是极具参考价值的案例。</div>    </article>
+  </section>
+  <section class="section">
+    <div class="section-h">🧠 模型动态</div>
+    <article class="item">
+      <div class="cardtop">
+        <span class="src">来源：Hacker News (AI)</span>
+        <span class="feat">✦ 精选 75</span>
+      </div>
+      <div class="title"><a href="https://twitter.com/NoamShazeer/status/2067400851438932297" target="_blank" rel="noopener">Transformer架构奠基人Noam Shazeer宣布加入OpenAI</a></div>
+      <div class="chips">
+<span class="chip" style="background:var(--t-模型,#888)">模型</span><span class="chip" style="background:var(--t-行业,#888)">行业</span>      </div>
+<div class="summary">Noam Shazeer在社交媒体宣布将加入OpenAI，并对离开表示不舍，称对谷歌团队及共同成果感到骄傲。Shazeer是『Attention is All You Need』论文的核心作者之一，该论文奠定了现代大语言模型的架构基础，他此前曾长期供职于Google Brain并联合创立Character.AI。此次加盟意味着OpenAI在顶尖基础研究人才上再度强化，对谷歌与OpenAI之间的人才竞争格局是一个标志性信号。</div><div class="why"><b>推荐理由：</b>Shazeer是Transformer架构的直接缔造者之一，其加入OpenAI对判断下一阶段模型架构演进方向、以及头部AI公司人才争夺烈度，具有极高参考价值——尤其值得关注其未来主导的研究方向。</div>    </article>
+    <article class="item">
+      <div class="cardtop">
+        <span class="src">来源：Hacker News (AI)</span>
+        <span class="feat">✦ 精选 75</span>
+      </div>
+      <div class="title"><a href="https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail" target="_blank" rel="noopener">Anthropic为Claude Fable隐藏护栏道歉</a></div>
+      <div class="chips">
+<span class="chip" style="background:var(--t-模型,#888)">模型</span><span class="chip" style="background:var(--t-行业,#888)">行业</span>      </div>
+<div class="summary">Anthropic为其新模型Claude Fable 5秘密部署了隐藏限制，在用户毫不知情的情况下悄然降级与「模型蒸馏」相关查询的回复质量——蒸馏是指利用大模型输出训练小模型的技术。该限制虽写入系统卡，但触发时既不通知用户，也不告知答案已被篡改。面对研究人员与竞争对手的强烈反弹，Anthropic公开致歉，承诺将该护栏纳入可见安全措施体系，即便这意味着模型会更频繁地直接拒绝请求。此事揭示「暗中降级」策略对社区信任的损耗不可持续，未来顶级实验室在能力管控上将面临更强的透明度压力。</div><div class="why"><b>推荐理由：</b>对AI产品团队和安全研究者均有直接参考价值：此案完整呈现了「隐性降级」与「显式拒绝」两种安全策略的取舍后果，是理解顶级实验室如何在竞争防护与用户知情权之间寻求平衡的典型案例，尤其适合正在制定模型安全策略的团队借鉴。</div>    </article>
+    <article class="item">
+      <div class="cardtop">
+        <span class="src">来源：Hacker News (AI)</span>
+        <span class="feat">✦ 精选 75</span>
+      </div>
+      <div class="title"><a href="https://arrowtsx.dev/bigger-models/" target="_blank" rel="noopener">开源GLM-5.2幻觉率仅为GPT-5.5三分之一</a></div>
+      <div class="chips">
+<span class="chip" style="background:var(--t-模型,#888)">模型</span><span class="chip" style="background:var(--t-行业,#888)">行业</span>      </div>
+<div class="summary">Z.ai发布的开源模型GLM-5.2拥有7530亿参数（约400亿激活参数，MIT协议），在Artificial Analysis智能指数上仅落后GPT-5.5 4分，而后者估算参数量是GLM-5.2的1.5至2倍。然而在可靠性上，GPT-5.5幻觉率是GLM-5.2的3倍；DeepSeek V4 Pro（1.6万亿参数）在AA-Omniscience基准上幻觉率高达94%，遇到不确定问题时仅6%的情况下会承认不知道。与此同时，Claude Fable 5在发布仅3天后即遭美国政府以国家安全为由禁用，成为美国首例因AI安全漏洞引发的官方封禁事件。上述信号共同表明，『以规模换性能』的路线正逼近天花板，参数效率与输出可信度将成为下一阶段模型竞争的核心维度。</div><div class="why"><b>推荐理由：</b>技术选型与产品决策者可从本文获取具体参考：MIT开源的GLM-5.2在幻觉率上显著优于估算规模更大的闭源模型，且部署成本更低，是企业考虑替换闭源方案的有力依据；Claude Fable 5被政府封禁的案例则对使用超大模型的企业提供了高价值的合规风险预警。</div>    </article>
+    <article class="item">
+      <div class="cardtop">
+        <span class="src">来源：Hacker News (AI)</span>
+        <span class="feat">✦ 精选 67</span>
+      </div>
+      <div class="title"><a href="https://stratechery.com/2026/anthropics-safety-superpower/" target="_blank" rel="noopener">Anthropic「安全护城河」受挑战：Fable发布后护栏遭破解</a></div>
+      <div class="chips">
+<span class="chip" style="background:var(--t-模型,#888)">模型</span><span class="chip" style="background:var(--t-行业,#888)">行业</span>      </div>
+<div class="summary">Anthropic以网络安全风险为由将Mythos Preview扣押约两个月后，以加装安全护栏的Fable版本对外公开发布。有评测者称Fable的主观体验远超GPT 5.5与Opus 4.8，判断其底层已完成新一轮预训练，属于继GPT-4、Grok 4之后的新一代基础模型，同时Anthropic与美国政府的关系也再度出现紧张迹象。然而护栏在发布后不久即遭破解，这意味着「审慎发布」策略本身的防护效力存疑，Anthropic赖以差异化的安全叙事正面临可信度压力。</div><div class="why"><b>推荐理由：</b>文章罕见地提供了Fable与GPT 5.5、Opus 4.8的横向能力感知对比，并完整呈现了「安全延迟发布→护栏被突破」的全过程；对需要判断Anthropic当前代际位置及「安全优先」策略实际效力的产品与战略决策者，有较高的参考价值。</div>    </article>
+    <article class="item">
+      <div class="cardtop">
+        <span class="src">来源：Hacker News (AI)</span>
+        <span class="feat">✦ 精选 60</span>
+      </div>
+      <div class="title"><a href="https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/" target="_blank" rel="noopener">美对Anthropic顶级模型实施出口管制，SK电信涉华疑虑成导火索</a></div>
+      <div class="chips">
+<span class="chip" style="background:var(--t-模型,#888)">模型</span><span class="chip" style="background:var(--t-行业,#888)">行业</span>      </div>
+<div class="summary">特朗普政府对Anthropic旗下最强AI模型Mythos及其公开版Fable 5实施出口管制，要求撤销所有外籍人士（含美国境内移民）的访问权限，事件导火索是Anthropic授权韩国SK电信使用Mythos，美国官员指其与中国存在关联。此后亚马逊研究人员向白宫报告称Fable 5存在可绕过安全护栏、进而调用Mythos网络攻击能力的漏洞，进一步动摇政府对Anthropic安全管控能力的信任（Anthropic及外部专家对此表示异议）。由于按国籍筛查用户在技术和隐私层面均难以落地，Anthropic选择直接下架两款模型，与白宫的恢复谈判目前仍陷僵局。此案标志着美国AI出口管制已从芯片算力管控扩展至「模型访问权」层面，对有涉外合作的商业AI企业具有直接警示意义。</div><div class="why"><b>推荐理由：</b>这是AI监管史上首个因「模型授权给外国企业」引发政府强制下架的重大案例，完整还原了从商业合规到地缘政治干预的演变链条。对正在或计划与海外客户共享前沿模型的AI企业决策者而言，此案的处置逻辑和监管边界极具参考价值。</div>    </article>
+    <article class="item">
+      <div class="cardtop">
+        <span class="src">来源：Hacker News (AI)</span>
+        <span class="feat">✦ 精选 73</span>
+      </div>
+      <div class="title"><a href="https://openrouter.ai/blog/insights/royale-last-agent-standing/" target="_blank" rel="noopener">11个大模型「大逃杀」实验：Grok赢了，但Claude才是你想要的</a></div>
+      <div class="chips">
+<span class="chip" style="background:var(--t-模型,#888)">模型</span><span class="chip" style="background:var(--t-行业,#888)">行业</span>      </div>
+<div class="summary">OpenRouter的开发者关系负责人Jacky Liang将11个大模型投入自制2D大逃杀游戏，共进行30局对战。Grok 4.1 Fast以43%胜率夺冠，且比同组最贵模型每次胜利成本低27倍；有3个模型全程零胜。Claude Sonnet 4.6则一路试图结盟、报告自身位置、主动交友——在竞争博弈中完败，但这恰恰暴露了传统基准测试的盲区：「能赢得战场」与「适合真实场景部署」是两个完全不同的能力维度，胜负型评测无法捕捉协作性、可信度与对齐行为的差异。</div><div class="why"><b>推荐理由：</b>对需要在项目中选型大模型的工程师和产品负责人极具参考价值：通过博弈实验直观展示了不同模型的「性格取向」差异，尤其是Grok的进攻性决策与Claude的协作倾向对比，能帮助团队在「效率优先」与「可控合规」之间做出更理性的选型判断，而非单靠MMLU分数。</div>    </article>
+  </section>
 
   <footer>
     本简报由脚本自动抓取 · 聚类去重 · 排序 · AI 摘要生成<br>
-    抓取/排序 0 成本，摘要由 sonnet 生成 · 2026-06-23 19:33
+    抓取/排序 0 成本 · 摘要由 sonnet 生成 · 2026-06-23 23:35
   </footer>
 </div>
-<script>
-  const btns=document.querySelectorAll('.f'),items=document.querySelectorAll('.item'),empty=document.querySelector('.empty');
-  btns.forEach(b=>b.addEventListener('click',()=>{
-    btns.forEach(x=>x.classList.remove('active'));b.classList.add('active');
-    const f=b.dataset.f;let shown=0;
-    items.forEach(it=>{
-      const ok=f==='全部'||(it.dataset.tags||'').split(',').includes(f);
-      it.style.display=ok?'':'none';if(ok)shown++;
-    });
-    empty.style.display=shown?'none':'block';
-  }));
-</script>
 </body>
 </html>
